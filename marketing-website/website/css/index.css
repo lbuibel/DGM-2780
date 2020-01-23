@@ -350,8 +350,48 @@ button {
 	top: -10%;
 }
 
-.footerContainer {
-	height: 40vh;
+footer {
+	height: 20vh;
 	background-color: rgb(239, 239, 239);
+	padding-top: 4rem;
+}
+.footerContainer {
+	width: 92%;
+	margin: 0 auto;
+	display: flex;
+}
 
+.footerContainer div {
+	margin-right: 4rem;
+}
+
+footer h2 {
+	font-weight: 600;
+	font-size: 1.15rem;
+	margin-bottom: 1rem;
+}
+
+footer p {
+	font-size: .75rem;
+	margin-bottom: .35rem;
+}
+
+.about p:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.resources p:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+
+.social i {
+	margin-right: .5rem;
+}
+
+.social i:hover {
+	cursor: pointer;
+	color: rgb(198, 8, 8);
 }
