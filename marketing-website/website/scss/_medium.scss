@@ -3,9 +3,9 @@
    License: none (public domain)
 */
 
-// html {
-//     font-size: 62.5%;
-// }
+html {
+    font-size: 62.5%;
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -23,7 +23,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 62.5%;
+	// font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -226,23 +226,46 @@ button {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: auto;
-	grid-column-gap: 1rem;
+    grid-gap: 1rem;
+
+    h1 {
+        color: rgb(198, 8, 8); 
+        text-transform: uppercase;
+    }
 }
 
 .card-image {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	position: relative;
-	margin-bottom: 1rem;
+    position: relative;
 }
 
 .card-info {
-	color: rgb(198, 8, 8);
-	text-align: center;
-	font-weight: 600;
-	font-size: 1.25rem;
-	margin-bottom: 2rem;
+    text-align: center;
+    h1 {
+        margin: .5rem 0 .25rem 0;
+        font-size: .75rem;
+        font-weight: 600;
+    }
+    p {
+        font-size: .75rem
+    }
+}
+
+.card-hero-text {
+    display: flex;
+    color: white;
+    h1 {
+        font-size: 1rem;
+        padding-bottom: 1rem; 
+        color: white;
+        font-weight: 600;
+    }
+    h1:hover {
+        color: rgb(198, 8, 8);
+        cursor: pointer;
+    }
 }
 
 .card01 {
@@ -257,7 +280,7 @@ button {
 
 .card03 {
 	grid-column: 1;
-	grid-row: 3;
+    grid-row: 3;
 }
 
 /* tahoe card */
@@ -268,28 +291,31 @@ button {
 
 .card05 {
 	grid-column: 1;
-	grid-row: 5;
+    grid-row: 5;
 }
 
 
 .tire-sale {
 	background-image: url("../assets/images/tires.jpeg");
-	height: 25vh;
+	height: 12rem;
 }
 
 .tdf-sale {
 	background-image: url("../assets/images/peloton.jpeg");
-	height: 25vh;
+	height: 12rem;
 }
 
 .group-ride {
 	background-image: url("../assets/images/group_ride.jpg");
-	height: 50vh;
+    height: 24rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .tahoe {
 	background-image: url("../assets/images/tahoe.JPG");
-    height: 50vh;
+    height: 24rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -306,13 +332,17 @@ button {
 
 .tool-wall {
 	background-image: url("../assets/images/tool_wall.jpg");
-	height: 25vh;
+    height: 14.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
   /*----------- USER SIGN UP ------------*/
 .formContainer {
+    margin-top: 2rem;
 	background-color: #1C2A35;
-	height: 10vh;
+	height: 8rem;
 }
 
   .sign-up {
@@ -324,7 +354,7 @@ button {
     align-items: center;
     h1 {
         font-weight: 600;
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
     input {
         width: 150px;
@@ -340,21 +370,27 @@ button {
   /*----------- FOOTER ------------*/
 footer {
     background-color: rgb(239, 239, 239);
-    font-size: .8rem;
+    height: 15rem;
+    font-size: .7rem;
+    padding-top: 3rem;
 }
 .footer-container {
-    padding: 1rem 0;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     h2 {
         font-weight: 600;
         font-size: 1rem;
-        padding-bottom: .5rem;
+        margin-bottom: .5rem;
     }
     p {
-        margin-bottom: .25rem;
+        margin-bottom: .35rem;
     }
     i {
-        font-size: 1.5rem;
+        font-size: 1rem;
+    }
+    i:hover {
+        cursor: pointer;
+        color: rgb(198, 8, 8);
     }
 }
+
