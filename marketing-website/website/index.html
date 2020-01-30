@@ -4,9 +4,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Road Warriors</title>
-	<link rel="stylesheet" href="css/index.css">
+	<!-- <link rel="stylesheet" href="css/index.css"> -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+	<link href="scss/styles.css" rel="stylesheet">  
 </head>
 
 <body>
@@ -17,18 +18,17 @@
 			<span>Bike Gallery</span>
 			<span>Contact</span>
 		</div>
-		<div class="logoContainer">
-			<div class="contentContainer">
-				<div class="logo"></div>
-				<div class="icons">
-					<i class="material-icons">search</i>
-					<i class="material-icons">account_circle</i>
-					<i class="material-icons">shopping_cart</i>
-				</div>
+		<!-- contains company logo and nav/icons -->
+		<div class="logo-container">
+			<div class="shop-logo"></div>
+			<div class="header-icons">
+				<i class="material-icons">search</i>
+				<i class="material-icons">account_circle</i>
+				<i class="material-icons">shopping_cart</i>
 			</div>
 		</div>
 	</header>
-
+	<!-- main navigation bar -->
 	<nav>
 		<ul class="nav">
 			<li>Bikes</li>
@@ -41,15 +41,16 @@
 		</ul>
 	</nav>
 
-	<div class="hero-image">
+	<section class="hero-image container">
 		<div class="hero-text">
-		  	<h1>Winter Sale</h1>
+			<h1>Winter Sale</h1>
 			<h3>Serving Encinitas Since 1986</h3>
 			<button>Shop Now</button>
 		</div>
-	</div>
+	</section>
 
-	<div class="grid-container">
+
+	<section class="grid-container container">
 
 		<div class="card01">
 			<div class="tire-sale card-image"></div>
@@ -59,64 +60,54 @@
 		</div>
 
 		<div class="card02">
-				<div class="tdf-sale card-image"></div>
-				<div class="card-info">
-					<h1>All Mountain Tires 25% Off </h1>
+			<div class="tdf-sale card-image"></div>
+			<div class="card-info">
+				<h1>All Mountain Tires 25% Off </h1>
 				</div>
 			</div>
 
-			<div class="card03">
-					<div class="group-ride card-image"></div>
-					<div class="card-info">
-						<h1>All Mountain Tires 25% Off </h1>
+		<div class="card03">
+			<div class="group-ride card-image"></div>
+			<div class="card-info">
+				<h1>All Mountain Tires 25% Off </h1>
+			</div>
+		</div>
+
+		<div class="card04">
+			<div class="tahoe card-image">
+				<div class="hero-text tahoe-text">
+					<h1>Tahoe</h1>
+					<h3>Yearly MTB Expedition</h3>
+					<div class="card-button">
+						<button>Book Now</button>
+						<button>More Info</button>
 					</div>
 				</div>
+			</div>
+		</div>
 
-				<div class="card04">
-					<div class="tahoe card-image">
-						<div class="hero-text tahoe-text">
-							<h1>Tahoe </h1>
-							<h3>Yearly MTB Expedition</h3>
-							<button>Book Now</button>
-							<button>More Info</button>
-						  </div>
-					</div>
-					</div>
+		<div class="card05">
+			<div class="tool-wall card-image"></div>
+			<div class="card-info">
+				<h1>All Mountain Tires 25% Off </h1>
+			</div>
+		</div>
 
-					<div class="card05">
-							<div class="tool-wall card-image"></div>
-							<div class="card-info">
-								<h1>All Mountain Tires 25% Off </h1>
-							</div>
-						</div>
+	</section>
 
-						<!-- <div class="card06">
-								<div class="tire-sale card-image"></div>
-								<div class="card-info">
-									<h1>All Mountain Tires 25% Off </h1>
-								</div>
-							</div>
-					
-							<div class="card07">
-									<div class="tdf-sale card-image"></div>
-									<div class="card-info">
-										<h1>All Mountain Tires 25% Off </h1>
-									</div>
-								</div> -->
-	</div>
 
-	<div class="formContainer">
-		<div class="form">
+	<section class="formContainer">
+		<div class="sign-up container">
 			<h1>Sign up for our mailing list</h1>
 			<input type="text" id="name" name="name" placeholder="Name">	
 			<input type="email" id="email" name="email" placeholder="Email">	
 			<button>Join</button>
 
 		</div>			
-	</div>
+	</section>
 
 	<footer>
-		<div class="footerContainer">
+		<div class="container footer-container">
 			<div class="encinitasInfo">
 				<h2>Encinitas</h2>
 				<p>555 East 500</p>
